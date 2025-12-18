@@ -69,7 +69,8 @@ body {
 
 /* ===== ПОЛЯ ВВОДА ===== */
 .text_regist input[type="text"],
-.text_regist input[type="password"] {
+.text_regist input[type="password"],
+.text_regist input[type="email"] {
     width: 100%;
     padding: 14px 16px;
     background: rgba(255, 255, 255, 0.1);
@@ -152,7 +153,7 @@ body {
     font-weight: bold;
 }
 
-/* ===== КНОПКА ===== */
+
 button {
     display: block;
     width: 100%;
@@ -173,4 +174,10 @@ button {
 button:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+
+.login_prompt {
+    color: white;
+    margin-top: 20px;
 }

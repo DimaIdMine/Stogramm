@@ -10,24 +10,32 @@
 
     <div class="text_regist">
         
-        <h2 class="register">Псиька</h2> 
+        <h2 class="register">Регистрация</h2> 
         <p class="text_Description">Введите данные для регистрации</p> 
         
         <form>
-            <div class="input-group">
-                <label for="username">Имя пользователя</label>
-                <input type="text" 
-                       id="username" 
-                       placeholder="Введите имя" 
-                       name="username">
-            </div>
-            
-            <div class="input-group">
-                <label for="password">Пароль</label>
-                <input type="password" 
-                       id="password" 
-                       placeholder="Введите пароль">
-            </div>
+    
+    <div class="input-group">
+        <label for="username">Имя пользователя</label>
+        <input type="text" 
+               id="username" 
+               placeholder="Введите имя" 
+               name="username">
+    </div>
+    
+    <div class="input-group">
+        <label for="email">Почта*</label>
+        <input type="email"
+               id="email"
+               placeholder="Введите почту">
+    </div>
+    
+    <div class="input-group">
+        <label for="password">Пароль</label>
+        <input type="password" 
+               id="password" 
+               placeholder="Введите пароль">
+    </div>
             
             
             <div class="divider"></div>
@@ -38,10 +46,17 @@
                 <label for="agree-terms">Я согласен с политикой конфиденциальности</label>
             </div>
             
-            <a href="Basic/index.html">
-            <button type="submit">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-            </a>
+            <button type="button" 
+                    onclick="window.location.href='Basic/index.html'" 
+                    class="submit-btn">
+                ЗАРЕГИСТРИРОВАТЬСЯ
+            </button>
+       <div class="login_prompt">
+        Уже есть аккаунт?
+            <a href="../Login/index.html">Войти.</a>
+            </div>
         </form>
+        
     </div>
 
 </body>
