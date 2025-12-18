@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stogram - Регистрация</title>
-    <link rel="stylesheet" href="css/main.css"> 
+    <title>Вход в аккаунт</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-    <div class="text_regist">
+     <div class="text_regist">
         
-        <h2 class="register">Регистрация</h2> 
-        <p class="text_Description">Введите данные для регистрации</p> 
+        <h2 class="register">Вход </h2> 
+        <p class="text_Description">Введите данные для входа в аккаунт</p> 
         
         <form>
     
@@ -23,7 +22,12 @@
                name="username">
     </div>
     
-   
+    <div class="input-group">
+        <label for="email">Почта*</label>
+        <input type="email"
+               id="email"
+               placeholder="Введите почту">
+    </div>
     
     <div class="input-group">
         <label for="password">Пароль</label>
@@ -36,23 +40,12 @@
             <div class="divider"></div>
             
             
-            <div class="custom-checkbox">
-                <input type="checkbox" id="agree-terms">
-                <label for="agree-terms">Я согласен с политикой конфиденциальности</label>
-            </div>
+           
             
             <button type="button" 
                     onclick="window.location.href='Basic/index.html'" 
                     class="submit-btn">
-                ЗАРЕГИСТРИРОВАТЬСЯ
+                Войти
             </button>
-       <div class="login_prompt">
-        Уже есть аккаунт?
-            <a href="Login/login.html">Войти.</a>
-            </div>
-        </form>
-        
-    </div>
-
 </body>
 </html>
