@@ -178,6 +178,6 @@ button:hover {
 
 
 .login_prompt {
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 20px;
 }
