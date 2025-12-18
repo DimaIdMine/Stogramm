@@ -126,3 +126,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Определяем текущую страницу
+    const currentPage = window.location.pathname;
+    
+    // Находим все ссылки в навигации
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Помечаем активную ссылку
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        
+        // Если ссылка ведет на текущую страницу
+        if (currentPage.includes(linkPath) && linkPath !== '#' && linkPath !== '') {
+            link.classList.add('active');
+        }
+        
+        // Если это главная страница и ссылка на index.html
+        if (currentPage.endsWith('/') || currentPage.endsWith('/index.html')) {
+            if (linkPath === '../index.html' || linkPath === 'index.html') {
+                link.classList.add('active');
+            }
+        }
+    });
+    
+    // Обработчик кликов для плавного перехода
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Если это внешняя ссылка
+            if (this.getAttribute('href').startsWith('http')) {
+                return; // Стандартный переход
+            }
+            
+            // Плавный переход для внутренних страниц
+            e.preventDefault();
+            
+            // Анимация загрузки
+            document.body.style.opacity = '0.7';
+            
+            setTimeout(() => {
+                window.location.href = this.getAttribute('href');
+            }, 300);
+        });
+    });
+});
