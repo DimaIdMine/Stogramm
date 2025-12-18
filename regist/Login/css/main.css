@@ -71,7 +71,7 @@ body {
 .text_regist input[type="password"],
 .text_regist input[type="email"] {
     width: 100%;
-    padding: 14px 70px;
+    padding: 13px 70px;
     background: rgba(255, 255, 255, 0.1);
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -83,8 +83,7 @@ body {
 
 .text_regist input::placeholder {
     color: rgba(255, 255, 255, 0.5);
-    text-align: left;
-    text-indent: 0;
+    
     
 }
 
