@@ -144,28 +144,29 @@ border-radius: 8px;
 .content {
     color: white;
     text-align: center;
-    margin: 150px auto 0 auto; /* Центрируем по горизонтали */
-    background: rgba(255, 255, 255, 0.08); /* Прозрачный фон как у кнопок */
-    backdrop-filter: blur(20px); /* Размытие как у кнопок */
+    margin: 150px 0 0 30px; /* 30px слева вместо 100px */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
     height: 600px;
     width: 900px;
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Более светлая граница */
-    border-radius: 20px; /* Увеличил скругление */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1); /* Легкое свечение */
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Вертикальное центрирование */
-    align-items: center; /* Горизонтальное центрирование */
+    justify-content: center;
+    align-items: center;
+    float: left; /* Прижимаем к левому краю */
 }
 
 /* Заголовок внутри блока */
 .content h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     position: relative;
     display: inline-block;
